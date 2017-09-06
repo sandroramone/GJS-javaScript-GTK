@@ -27,5 +27,7 @@ Depois de ter instalado o gjs para rodar qualquer um dos arquivos basta utilizar
 ### calculadora.js
   É apenas uma calculadora simples que ainda nescessita de melhorias.
 
+  ![Calculadora](./screenshots/calculadora.png)
+
 ### testeWebkit.js
   É um exemplo de como utilizar o webkit para criar web apps ou para coisas mais avançadas
