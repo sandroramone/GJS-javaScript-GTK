@@ -27,7 +27,7 @@ Depois de ter instalado o gjs para rodar qualquer um dos arquivos basta utilizar
 ### calculadora.js
   License [GPLv3](https://www.gnu.org/licenses/gpl.html)
 
-  É apenas uma calculadora simples que ainda nescessita de melhorias.
+  GJcalculator é uma simples calculadora desenvolvida com gjs + gtk pra fins de estudo.
 
   ![Calculadora](./screenshots/calculadora.png)
 
