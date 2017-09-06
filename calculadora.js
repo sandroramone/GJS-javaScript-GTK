@@ -42,6 +42,7 @@ const App = new Lang.Class({
         this._grid = new Gtk.Grid({margin: 10})
 
         this._text = new Gtk.Entry({margin_bottom: 7})
+        this._text.set_alignment(1)
 
         const arraybuttons = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 'C', '/', '*', '-', '.', '+']
 
