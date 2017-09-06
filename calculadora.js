@@ -53,7 +53,7 @@ const App = new Lang.Class({
         })
 
         this._headerBar = new Gtk.HeaderBar()
-        this._headerBar.set_title('Calculadora')
+        this._headerBar.set_title('GJcalculator')
         this._headerBar.set_subtitle('Calculadora com GJs')
         this._headerBar.show_close_button = true
 
