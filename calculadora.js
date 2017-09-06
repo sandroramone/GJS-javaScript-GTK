@@ -38,7 +38,7 @@ const App = new Lang.Class({
         this._headerBar.show_close_button = true
 
         this._grid = new Gtk.Grid()
-        
+
         this._text = new Gtk.Entry()
 
         const arraybuttons = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, '/', '*', '-', '+']
@@ -74,6 +74,10 @@ const App = new Lang.Class({
     },
 
     _setText: function(btn) {
+        if(this._resolved && !isNaN(btn.get_label())) {
+          this._text.set_text('')
+        }
+        this._resolved = false
         const textlabel = this._text.get_text() + btn.get_label()
         this._text.set_text(`${textlabel}`)
     },
@@ -81,7 +85,10 @@ const App = new Lang.Class({
     _setResolve: function() {
         const textlabel = eval(this._text.get_text())
         this._text.set_text(`${textlabel}`)
-    }
+        this._resolved = true
+    },
+
+    _resolved: false
 })
 
 let app = new App()
