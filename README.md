@@ -25,6 +25,8 @@ Depois de ter instalado o gjs para rodar qualquer um dos arquivos basta utilizar
     #!/usr/bin/gjs por #!/usr/bin/cjs ou vice-versa
 
 ### calculadora.js
+  License [GPLv3](https://www.gnu.org/licenses/gpl.html)
+
   É apenas uma calculadora simples que ainda nescessita de melhorias.
 
   ![Calculadora](./screenshots/calculadora.png)
