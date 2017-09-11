@@ -61,6 +61,7 @@ const App = new Lang.Class({
 
         this._text = new Gtk.Entry({margin_bottom: 7})
         this._text.set_alignment(1)
+        this._text.connect('activate', Lang.bind(this, this._setResolve))
 
         const arraybuttons = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 'C', '/', '*', '-', '.', '+']
 
@@ -116,16 +117,22 @@ const App = new Lang.Class({
         this._resolved = false
         const textlabel = this._text.get_text() + btn.get_label()
         this._text.set_text(`${textlabel}`)
+        this._text.grab_focus_without_selecting()
+        this._text.set_position(this._text.get_text().length)
     },
 
     _setResolve: function() {
         const textlabel = eval(this._text.get_text())
         this._text.set_text(`${textlabel}`)
         this._resolved = true
+        this._text.grab_focus_without_selecting()
+        this._text.set_position(this._text.get_text().length)
     },
 
     _clear: function() {
-      this._text.set_text('')
+        this._text.set_text('')
+        this._text.grab_focus_without_selecting()
+        this._text.set_position(this._text.get_text().length)
     },
 
     _resolved: false
