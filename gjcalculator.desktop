@@ -1,0 +1,10 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name[pt_BR]=Calculadora
+Comment[pt_BR]=Efetue calculos
+Exec=gjcalculator
+Icon=accessories-calculator
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GTK;Utility;Calculator;
